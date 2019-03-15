@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use App\Traits\HasDishes;
 use Illuminate\Database\Eloquent\Model;
 
 class Menu extends Model
 {
+    use HasDishes;
     /**
      * The attributes that are mass assignable.
      *
