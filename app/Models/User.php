@@ -3,10 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
+use App\Traits\HasRoles;
 
 class User extends Authenticatable
 {
+    use Notifiable;
+    use HasRoles;
     /**
      * The attributes that are mass assignable.
      *
@@ -53,5 +57,35 @@ class User extends Authenticatable
     public function permissions()
     {
         return $this->belongsToMany('App\Models\Permission', 'user_has_permissions');
+    }
+
+    /**
+     * A user have any file image.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\hasMany
+     */
+    public function uploads()
+    {
+        return $this->hasMany('App\Models\Upload');
+    }
+
+    /**
+     * A user have any blog.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\hasMany
+     */
+    public function blogs()
+    {
+        return $this->hasMany('App\Models\Blog');
+    }
+
+    /**
+     * A user have any confirmation.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\hasMany
+     */
+    public function confirmations()
+    {
+        return $this->hasMany('App\Models\Confirmation');
     }
 }

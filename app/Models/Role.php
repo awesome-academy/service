@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use App\Traits\HasRoles;
 use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
+    use HasRoles;
     /**
      * The attributes that aren't mass assignable.
      *

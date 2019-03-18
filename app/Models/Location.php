@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use App\Traits\HasTypeServices;
 use Illuminate\Database\Eloquent\Model;
 
 class Location extends Model
 {
+    use HasTypeServices;
     /**
      * The attributes that are mass assignable.
      *
