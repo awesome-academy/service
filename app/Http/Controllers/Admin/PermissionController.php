@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\PermissionRequest;
 use App\Repositories\Facades\PermissionRepository;
 
 class PermissionController extends Controller
@@ -45,7 +46,7 @@ class PermissionController extends Controller
      *
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store(Request $request)
+    public function store(PermissionRequest $request)
     {
         $requestData = $request->all();
 
@@ -90,7 +91,7 @@ class PermissionController extends Controller
      *
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, $id)
+    public function update(PermissionRequest $request, $id)
     {
         $requestData = $request->all();
 

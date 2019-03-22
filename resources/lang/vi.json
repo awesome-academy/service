@@ -23,5 +23,11 @@
     "permission.notification.add": "Permission added!",
     "permission.notification.update": "Permission update!",
     "permission.notification.delete": "Permission delete!",
-    "notification.delete": "Confirm delete?"
+    "notification.delete": "Confirm delete?",
+    "role.title": "Role",
+    "role.title_create": "Create New Role",
+    "role.edit_create": "Edit Role",
+    "role.notification.add": "Role added!",
+    "role.notification.update": "Role update!",
+    "role.notification.delete": "Role delete!"
 }
