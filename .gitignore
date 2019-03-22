@@ -1,6 +1,9 @@
 /node_modules
 /public/hot
 /public/storage
+/public/fonts
+/public/mix-manifest.json
+package-lock.json
 /storage/*.key
 /vendor
 .env
