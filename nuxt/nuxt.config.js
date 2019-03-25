@@ -59,8 +59,8 @@ module.exports = {
     ** Plugins to load before mounting the App
     */
     plugins: [
-        // '~/plugins/argon/argon-kit',
-        // '~/plugins/i18n.js',
+        '~/plugins/argon/argon-kit',
+        '~/plugins/i18n.js',
         { src: '~/plugins/vue-notifications', ssr: false },
     ],
     /*
