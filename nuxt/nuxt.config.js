@@ -1,7 +1,8 @@
 import path from 'path'
 import fs from 'fs'
 const pkg = require('./package')
-
+require('dotenv').config()
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 
 module.exports = {
     server: {
@@ -45,14 +46,14 @@ module.exports = {
     ** Global CSS
     */
     css: [
-        // '~assets/argon/vendor/nucleo/css/nucleo.css',
-        // '~assets/argon/vendor/font-awesome/css/font-awesome.css',
-        // '~assets/argon/scss/argon.scss',
+        'argon-design-system/assets/argon/vendor/nucleo/css/nucleo.css',
+        'argon-design-system/assets/argon/vendor/font-awesome/css/font-awesome.css',
+        'argon-design-system/assets/argon/scss/argon.scss',
         'bootstrap-vue/dist/bootstrap-vue.css'
     ],
 
     router: {
-      middleware: 'i18n'
+        middleware: 'i18n'
     },
     /*
     ** Plugins to load before mounting the App
@@ -60,11 +61,8 @@ module.exports = {
     plugins: [
         // '~/plugins/argon/argon-kit',
         // '~/plugins/i18n.js',
-        // { src: '~/plugins/vue-notifications', ssr: false },
+        { src: '~/plugins/vue-notifications', ssr: false },
     ],
-    // generate: {
-    //   routes: ['/', '/wedding-service', '/outside-wedding-service', 'order-now', '/en', '/en/wedding-service', '/en/outside-wedding-service', '/en/order-now']
-    // },
     /*
     ** Nuxt.js modules
     */
@@ -78,6 +76,8 @@ module.exports = {
                 css: false
             }
         ],
+        // Doc: https://github.com/nuxt-community/dotenv-module
+        ['@nuxtjs/dotenv', {path : './../'}]
         // '@nuxtjs/pwa'
     ],
     /*
@@ -86,7 +86,6 @@ module.exports = {
     axios: {
         // See https://github.com/nuxt-community/axios-module#options
     },
-
     /*
     ** Build configuration
     */
@@ -94,16 +93,16 @@ module.exports = {
         /*
         ** You can extend webpack config here
         */
-       extend(config, ctx) {
-        // Run ESLint on save
-        if (ctx.isDev && ctx.isClient) {
-          config.module.rules.push({
-            enforce: 'pre',
-            test: /\.(js|vue)$/,
-            loader: 'eslint-loader',
-            exclude: /(node_modules)/
-          })
+        extend(config, ctx) {
+            // Run ESLint on save
+            if (ctx.isDev && ctx.isClient) {
+                config.module.rules.push({
+                    enforce: 'pre',
+                    test: /\.(js|vue)$/,
+                    loader: 'eslint-loader',
+                    exclude: /(node_modules)/
+                })
+            }
         }
-      }
     }
 }
