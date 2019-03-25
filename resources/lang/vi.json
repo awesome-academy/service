@@ -1,4 +1,5 @@
 {
+    "permissions": "Permissions",
     "permission.title": "Quyền Truy Cập",
     "permission.title_create": "Tạo Mới Quyền Truy Cập",
     "permission.edit_create": "Sửa Quyền Truy Cập",
@@ -12,6 +13,8 @@
     "search": "Tìm kiếm",
     "name": "Tên",
     "address": "Địa chỉ",
+    "email": "Email",
+    "password": "Password",
     "actions": "Hành Động",
     "id": "ID",
     "title.admin": "Argon Management Users, Permissions, Roles",
@@ -24,10 +27,17 @@
     "permission.notification.update": "Permission update!",
     "permission.notification.delete": "Permission delete!",
     "notification.delete": "Confirm delete?",
+    "roles": "Roles",
     "role.title": "Role",
     "role.title_create": "Create New Role",
     "role.edit_create": "Edit Role",
     "role.notification.add": "Role added!",
     "role.notification.update": "Role update!",
-    "role.notification.delete": "Role delete!"
+    "role.notification.delete": "Role delete!",
+    "user.title": "User",
+    "user.title_create": "Create New User",
+    "user.edit_create": "Edit User",
+    "user.notification.add": "User added!",
+    "user.notification.update": "User update!",
+    "user.notification.delete": "User delete!"
 }
