@@ -1,0 +1,171 @@
+{
+    "links": {
+        "home": "Home",
+        "about": "About",
+        "english": "EN",
+        "vietnamese": "VI"
+    },
+    "navbar": {
+        "wedding": {
+            "type": "Wedding",
+            "service": "Wedding Service",
+            "service_content": "Event center Argon is designed in the style: luxurious, modern, delicate.",
+            "outside_service": "outside wedding party",
+            "outside_service_content": "Come to us, Wedding reception in a spacious space, blending with nature is gradually becoming a popular trend for many active young people."
+        },
+        "event": {
+            "type": "Event",
+            "workshop": "friendship workshop",
+            "workshop_content": "At Argon, all events of every company and organization will be well prepared and formal.",
+            "customer_gratitude": "Customer Gratitude",
+            "customer_gratitude_content": "We believe that the party organization, gratitude ceremony for customers not only shows the deep concern as well as thanks to the senior officials of state agencies, business owners to you. dear customers, big business partners, product suppliers for your business.",
+            "birthday": "Birthday party",
+            "birthday_content": "For each person, birthdays are an important occasion. But not everyone knows how to organize a meaningful birthday.",
+            "music_fashion": "Music Event, Fashion",
+            "music_fashion_content": "A lot of famous singers and celebrities chose to perform at the stage of Dong Drum like Uyen Linh, Trung Quan Idol, Sweet Band ...",
+            "outside_catering": "OUTSIDE - CATERING Service",
+            "outside_catering_content": "Argon received the trust of partners like Vingroup, Nissan and Japanese partners such as Denso, Nitori ..."
+        },
+        "gift": {
+            "type": "Gift"
+        },
+        "menu": {
+            "type": "Menu"
+        },
+        "news": {
+            "type": "News"
+        },
+        "order_now": {
+            "type": "Order Now",
+            "title": "Success",
+            "message": "Book a successful party"
+        }
+    },
+    "footer": {
+        "thank": "Thank you for always supporting us!",
+        "contact": "Please contact us when necessary through social network channels.",
+        "about": "About Us",
+        "blog": "Blog",
+        "license": "license 9669"
+    },
+    "home": {
+        "slot": "GENERAL INTRODUCTION",
+        "hero": {
+            "rate": "Star us on",
+            "call": "call me:",
+            "tabs_section": {
+                "title": "About the company and service",
+                "us": "About us",
+                "us_description": "Argon Co., Ltd. owns a chain of leading wedding, event and conference centers with luxurious, sophisticated architecture, class standards and the most professional quality service in Hanoi. Ensuring servicing from 100 guests to 1500 guests, Argon centers are suitable for organizing a variety of events. Argon system offers you convenient services including: Wedding Party Service, Conference Service - Workshop, Outside Catering Banquet Service, Birthday Party Service, Wedding Planner Service.",
+                "history": "Historical thickness of service expansion",
+                "history_description": "With the first establishment established in 1975, Argon now marks with 10 event centers, weddings located in prime locations in the city center. The future we continue to expand into cities across the country like Ho Chi Minh or new places of interest that fit many different market needs of guests. We always put prestige and responsibility first. With after-sales services for regular customers, we have more special offers."
+            }
+        },
+        "carousel": {
+            "slide1": "Brilliant Outdoor Wedding Party!",
+            "slide2": "Dramatic stage storing hundreds of years of memories!",
+            "slide3": "A strange birthday party!",
+            "slide4": "Professional event organization!"
+        },
+        "download_section": {
+            "gift": {
+                "text1": "Moreover",
+                "text2": "Book a party today to receive the offer",
+                "text3": "20%",
+                "text4": "on the occasion of the holiday",
+                "text5": "April 30 and May 1",
+                "text6": "From March 8 to April 1, 2019, you only need to deposit a party with the number of over 100 guests at Argon Cau Giay, in addition to the preferential 20%, customers will be given 01 set of high-class Minh Long ceramic dishes."
+            }
+        }
+    },
+    "wedding_service": {
+        "title": "Event center Argon is designed in the style: luxurious, modern, sophisticated combined with the space of banquet rooms, conference rooms - diverse workshops, serving from 100 guests to 1500 guests, suitable for many different types of events, class standards and professional service quality.",
+        "number": "number",
+        "people": "people",
+        "status": "status",
+        "free": "not yet booked",
+        "booking": "booking",
+        "list_title": "Wedding venues",
+        "type": "Address can serve:"
+    },
+    "outside_wedding_service": {
+        "title": "Organization of weddings in a spacious space, blending with nature is gradually becoming a popular trend of many dynamic young people - modern couples wish the wedding becomes an unforgettable memory in life. . A series of popular names in Vietnamese showbiz such as singer Dan Truong, singer Phuong Vy, supermodel Ha Anh, or most recently, Khoi My couple - Kelvin Khanh also choose this form for the big day of my life.",
+        "number": "number",
+        "people": "people",
+        "status": "status",
+        "free": "not yet booked",
+        "booking": "booking",
+        "list_title": "Outdoor wedding venues"
+    },
+    "friendship_workshop": {
+        "title": "At Argon, all events of every company and organization will be well prepared and formal. Understanding customer needs, we share our concerns and meet the most stringent requirements for quality as well as creative, unique and special ideas with the most affordable cost.",
+        "number": "number",
+        "people": "people",
+        "status": "status",
+        "free": "not yet booked",
+        "booking": "booking",
+        "list_title": "Locations for friendship-workshop"
+    },
+    "customer_gratitude": {
+        "title": "We believe that the party organization, gratitude ceremony for customers not only shows the deep concern as well as thanks to the senior officials of state agencies, business owners to you. dear customers, big business partners, product suppliers for your business. Besides, this is also an opportunity to show the face of businesses and organizations, demonstrate the stature and position of your company.",
+        "number": "number",
+        "people": "people",
+        "status": "status",
+        "free": "not yet booked",
+        "booking": "booking",
+        "list_title": "Customer appreciation organization locations"
+    },
+    "birthday": {
+        "title": "Everyone knows, birthdays are an important occasion for every person because only once a year. Holding a warm, happy party with relatives is a dream of many people. But not Everyone knows how to make that happen.",
+        "number": "number",
+        "people": "people",
+        "status": "status",
+        "free": "not yet booked",
+        "booking": "booking",
+        "list_title": "Locations for birthday"
+    },
+    "music_fashion": {
+        "title": "A lot of famous singers and celebrities have chosen to perform at the stage of the Bronze Drum such as Uyen Linh, Trung Quan Idol, Ngot Band ... To help customers reduce the pressure of having to perform art performances, Bronze Drum Palace - the leading event organization that organizes music and fashion events ... Dong Palace Drum always gives you attractive scenarios with tight layout, sound equipment system , quality lighting, modern, professional stage design, well-trained event team with top directors, choreographers, models, singers, stars. In particular, the flexibility of the event size is an advantage of the Bronze Drum in the field which has attracted the attention of this audience.",
+        "number": "number",
+        "people": "people",
+        "status": "status",
+        "free": "not yet booked",
+        "booking": "booking",
+        "list_title": "Locations for music event and fashion"
+    },
+    "outside_catering": {
+        "title": "Not only providing event organizing services at Argon system, we also provide party and event services at companies, corporations and factories with thousands of people. Professional, dedicated and thoughtful working style, Argon received the trust of partners like Vingroup, Nissan and Japanese partners such as Denso, Nitori ...",
+        "number": "number",
+        "people": "people",
+        "status": "status",
+        "free": "not yet booked",
+        "booking": "booking",
+        "list_title": "Locations for outside - catering"
+    },
+    "menu": {
+        "title": "Made from the hands of talented chefs who have worked at 5-star restaurants around the world, Argon's menu is extremely delicious and has many exquisite dishes, priced from 250,000 VND / person until VND 400,000 / person.",
+        "total_price": "Total price",
+        "meal": "meal"
+    },
+    "order_now": {
+        "title": "We will contact you as soon as possible, please provide the information below. Thank you very much!",
+        "name_placeholder": "Your Name",
+        "address_placeholder": "Example 155 Jefferson St, Passaic, NJ 07055, USA",
+        "phone_placeholder": "Your Number Phone",
+        "name": "Full name: ",
+        "address": "Address: ",
+        "phone": "Phone number: ",
+        "requirement": "More Requirements: ",
+        "requirement_placeholder": "Please write more requests for us to make our advice easier",
+        "send": "Send",
+        "list_log": "Please correct the following error(s):",
+        "log_title": "Some things wrong",
+        "name_log": "You have not entered the name information",
+        "address_log": "You have not entered the address",
+        "phone_log": "You have not entered the phone"
+    },
+    "about": {
+        "title": "About",
+        "introduction": "This page is made to give you more informations."
+    }
+}
