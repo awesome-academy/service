@@ -49,7 +49,8 @@ module.exports = {
         'argon-design-system/assets/argon/vendor/nucleo/css/nucleo.css',
         'argon-design-system/assets/argon/vendor/font-awesome/css/font-awesome.css',
         'argon-design-system/assets/argon/scss/argon.scss',
-        'bootstrap-vue/dist/bootstrap-vue.css'
+        'bootstrap-vue/dist/bootstrap-vue.css',
+        '~/assets/css/banner.css'
     ],
 
     router: {
