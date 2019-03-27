@@ -49,5 +49,14 @@
                 </li>
             </ul>
         </div>
+        <div class="card-body">
+            <ul class="nav" role="tablist">
+                <li role="presentation">
+                    <a href="{{ url('/admin/dish') }}">
+                        {{ __('dish.title') }}
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

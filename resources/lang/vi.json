@@ -51,5 +51,15 @@
     "max.people": "Max People",
     "status": "Status",
     "image": "Image",
-    "typeServices": "Type Services"
+    "typeServices": "Type Services",
+    "dishes": "Dishes",
+    "dish.title": "Dish",
+    "dish.title_create": "Create New Dish",
+    "dish.edit_create": "Edit Dish",
+    "dish.notification.add": "Dish added!",
+    "dish.notification.update": "Dish update!",
+    "dish.notification.delete": "Dish delete!",
+    "price": "Price",
+    "typeDish": "Type Dish",
+    "currency": "VND"
 }
