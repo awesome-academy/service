@@ -24,3 +24,4 @@ Route::get('customer-gratitude', 'Api\LocationController@customerGratitude');
 Route::get('birthday', 'Api\LocationController@birthday');
 Route::get('music-fashion', 'Api\LocationController@musicFashion');
 Route::get('outside-catering', 'Api\LocationController@outsideCatering');
+Route::get('menu', 'Api\MenuController@index');
