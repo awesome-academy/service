@@ -5,7 +5,7 @@
         <div class="col px-0">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-12 text-center pt-lg">
-              <img :src="process.env.NUXT_BANNER_BLUE_IMG" class="img-fluid blue-banner">
+              <img :src="blueImage" class="img-fluid blue-banner">
               <p class="lead mt-4 mb-5">
                 <slot>
                   {{ $t('order_now.title') }}
@@ -112,6 +112,7 @@ export default {
   layout: 'other',
   data() {
     return {
+      blueImage: process.env.NUXT_BANNER_BLUE_IMG,
       errors: [],
       order: {
         name: null,
