@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
+use File;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreLocationRequest;
+use App\Http\Requests\UpdateLocationRequest;
 use App\Repositories\Facades\StatusRepository;
 use App\Repositories\Facades\LocationRepository;
 use App\Repositories\Facades\TypeServiceRepository;
-use File;
-use App\Http\Requests\StoreLocationRequest;
 
 class LocationController extends Controller
 {
@@ -98,12 +99,12 @@ class LocationController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param int                      $id
+     * @param UpdateLocationRequest $request
+     * @param int                   $id
      *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateLocationRequest $request, $id)
     {
         $requestData = $request->except(['image', 'typeServices']);
         $requestData['status_id'] = $request->status;
