@@ -5,7 +5,7 @@
         <div class="col px-0">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-12 text-center pt-lg">
-              <img :src="process.env.NUXT_BANNER_BLUE_IMG" class="img-fluid blue-banner">
+              <img :src="blueImage" class="img-fluid blue-banner">
               <p class="lead mt-4 mb-5">
                 <slot>
                   {{ $t('menu.title') }}
@@ -39,7 +39,7 @@
                 <ul v-for="dish in item.dishes" :key="dish.id" class="list-group">
                   <li class="list-group-item d-flex justify-content-between align-items-center">{{ dish.name }}
                     <b-button v-b-tooltip.right.hover variant="outline-secondary" title="Image for dish">
-                      <img v-lazy="process.env.APP_URL + dish.link_image" class="card-img">
+                      <img v-lazy="appUrl + dish.link_image" class="card-img">
                     </b-button>
                   </li>
                 </ul>
@@ -77,6 +77,8 @@ export default {
   },
   data() {
     return {
+      blueImage: process.env.NUXT_BANNER_BLUE_IMG,
+      appUrl: process.env.APP_URL,
       items: [],
       lastPage: 0
     }

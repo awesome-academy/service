@@ -5,7 +5,7 @@
         <div class="col px-0">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-12 text-center pt-lg">
-              <img :src="process.env.NUXT_BANNER_BLUE_IMG" class="img-fluid blue-banner">
+              <img :src="blueImage" class="img-fluid blue-banner">
               <p class="lead mt-4 mb-5">
                 <slot>
                   {{ $t('outside_catering.title') }}
@@ -26,7 +26,7 @@
           <div class="col-md-12 mb-5 mb-md-0">
             <div class="card card-lift--hover shadow border-0">
               <nuxt-link to="/">
-                <img v-lazy="process.env.APP_URL + item.link_image" class="card-img">
+                <img v-lazy="appUrl + item.link_image" class="card-img">
               </nuxt-link>
             </div>
             <div>
@@ -70,6 +70,8 @@ export default {
   },
   data() {
     return {
+      blueImage: process.env.NUXT_BANNER_BLUE_IMG,
+      appUrl: process.env.APP_URL,
       items: [],
       lastPage: 0
     }

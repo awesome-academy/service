@@ -16,7 +16,7 @@
       <div class="col px-0">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-7 text-center pt-lg">
-            <img :src="process.env.NUXT_BANNER_IMG" class="img-fluid">
+            <img :src="banner" class="img-fluid">
             <p class="lead text-white mt-4 mb-5">
               <slot></slot>
             </p>
@@ -32,7 +32,7 @@
               title="Support us on Facebook"
             >
               <img
-                :src="process.env.NUXT_FACEBOOK_SVG"
+                :src="facebook"
                 class="facebook-svg"
               >
             </a>
@@ -40,9 +40,9 @@
           <div class="col-sm-4 mt-4 mt-sm-0 text-right">
             <span class="text-white alpha-7">{{ $t('home.hero.call') }}</span>
             <a href="#" target="_blank">
-              <img :src="process.env.NUXT_PHONE_IMG" class="ml-3 phone-image">
+              <img :src="phone" class="ml-3 phone-image">
             </a>
-            <span class="text-white alpha-7">{{ procees.env.NUXT_PHONE_NUMBER }}</span>
+            <span class="text-white alpha-7">{{ phoneNumber }}</span>
           </div>
         </div>
       </div>
@@ -56,6 +56,14 @@ import TabsSection from './JavascriptComponents/TabsSection'
 export default {
   components: {
     TabsSection
+  },
+  data() {
+    return {
+      banner: process.env.NUXT_BANNER_IMG,
+      facebook: process.env.NUXT_FACEBOOK_SVG,
+      phone: process.env.NUXT_PHONE_IMG,
+      phoneNumber: process.env.NUXT_PHONE_NUMBER
+    }
   }
 }
 </script>
