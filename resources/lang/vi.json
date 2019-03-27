@@ -39,5 +39,17 @@
     "user.edit_create": "Edit User",
     "user.notification.add": "User added!",
     "user.notification.update": "User update!",
-    "user.notification.delete": "User delete!"
+    "user.notification.delete": "User delete!",
+    "locations": "Locations",
+    "location.title": "Location",
+    "location.title_create": "Create New Location",
+    "location.edit_create": "Edit Location",
+    "location.notification.add": "Location added!",
+    "location.notification.update": "Location update!",
+    "location.notification.delete": "Location delete!",
+    "min.people": "Min People",
+    "max.people": "Max People",
+    "status": "Status",
+    "image": "Image",
+    "typeServices": "Type Services"
 }

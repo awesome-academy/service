@@ -32,13 +32,22 @@
             </ul>
         </div>
         <div class="card-body">
-                <ul class="nav" role="tablist">
-                    <li role="presentation">
-                        <a href="{{ url('/admin/user') }}">
-                            {{ __('user.title') }}
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav" role="tablist">
+                <li role="presentation">
+                    <a href="{{ url('/admin/user') }}">
+                        {{ __('user.title') }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <ul class="nav" role="tablist">
+                <li role="presentation">
+                    <a href="{{ url('/admin/location') }}">
+                        {{ __('location.title') }}
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

@@ -18,6 +18,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['role:admin', 'auth']], func
     Route::resource('permission', 'Admin\\PermissionController');
     Route::resource('role', 'Admin\\RoleController');
     Route::resource('user', 'Admin\\UserController');
+    Route::resource('location', 'Admin\\LocationController');
     Route::get('/', 'Admin\\AdminController@dashboard');
 });
 
