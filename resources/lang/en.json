@@ -61,5 +61,13 @@
     "dish.notification.delete": "Dish delete!",
     "price": "Price",
     "typeDish": "Type Dish",
-    "currency": "VND"
+    "currency": "VND",
+    "menus": "Menus",
+    "menu.title": "Menu",
+    "menu.title_create": "Create New Menu",
+    "menu.edit_create": "Edit Menu",
+    "menu.notification.add": "Menu added!",
+    "menu.notification.update": "Menu update!",
+    "menu.notification.delete": "Menu delete!",
+    "typeMenu": "Type Menu"
 }
