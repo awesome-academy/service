@@ -13,6 +13,9 @@ class Confirmation extends Model
      */
     protected $fillable = [
         'order_id',
+        'user_id',
+        'location_id',
+        'menu_id'
     ];
 
     /**
