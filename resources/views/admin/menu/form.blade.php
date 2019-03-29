@@ -2,7 +2,7 @@
     {{ Form::label('name', __('name'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::text('name', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('name', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -10,7 +10,7 @@
     {{ Form::label('typeMenu', __('typeMenu'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-3">
         {{ Form::select('typeMenu', $typeMenus, isset($menu) ? $menu->typeMenu->id : null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('typeMenu', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('typeMenu', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -18,7 +18,7 @@
     {{ Form::label('dishes', __('dishes'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::select('dishes[]', $dishes, isset($menu) ? $dishNames : null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control', 'multiple']) }}
-        {{ $errors->first('dishes', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('dishes', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
