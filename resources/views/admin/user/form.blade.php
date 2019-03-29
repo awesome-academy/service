@@ -2,7 +2,7 @@
     {{ Form::label('name', __('name'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::text('name', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('name', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -10,7 +10,7 @@
     {{ Form::label('email', __('email'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::email('email', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('email', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('email', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -18,7 +18,7 @@
     {{ Form::label('password', __('password'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::password('password', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('password', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('password', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -26,7 +26,7 @@
     {{ Form::label('roles', __('roles'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::select('roles[]', $roles, isset($user) ? $user->getRoleNames() : null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control', 'multiple']) }}
-        {{ $errors->first('roles', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('roles', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 

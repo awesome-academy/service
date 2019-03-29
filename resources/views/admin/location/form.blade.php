@@ -2,7 +2,7 @@
     {{ Form::label('name', __('name'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::text('name', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('name', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -10,7 +10,7 @@
     {{ Form::label('address', __('address'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-12">
         {{ Form::text('address', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('address', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('address', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -18,7 +18,7 @@
     {{ Form::label('min_people', __('min.people'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-3">
         {{ Form::number('min_people', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('minPeople', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('minPeople', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -26,7 +26,7 @@
     {{ Form::label('max_people', __('max.people'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-3">
         {{ Form::number('max_people', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('maxPeople', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('maxPeople', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -34,7 +34,7 @@
     {{ Form::label('status', __('status'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-3">
         {{ Form::select('status', $statuses, isset($location) ? $location->status->id : null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('status', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('status', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -43,7 +43,7 @@
     <div class="col-md-6">
         {{ Form::file('image', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
         <img id="preview" src="{{ isset($location) ? '/' . $location->link_image : config('image.noImage') }}" width="500px" height="320px"/><br/>
-        {{ $errors->first('image', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('image', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -51,7 +51,7 @@
     {{ Form::label('typeServices', __('typeServices'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::select('typeServices[]', $typeServices, isset($location) ? $location->getTypeServiceNames() : null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control', 'multiple']) }}
-        {{ $errors->first('typeServices', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('typeServices', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 

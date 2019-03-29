@@ -2,7 +2,7 @@
     {{ Form::label('name', __('name'), ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::text('name', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) }}
-        {{ $errors->first('name', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -10,7 +10,7 @@
     {{ Form::label('permissions', 'Permission', ['class' => 'col-md-4 control-label']) }}
     <div class="col-md-6">
         {{ Form::select('permissions[]', $permissions, isset($role) ? $role->permissions->pluck('name', 'name') : null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required','multiple'] : ['class' => 'form-control','multiple']) }}
-        {{ $errors->first('permissions', '<p class="help-block">:message</p>') }}
+        {!! $errors->first('permissions', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
