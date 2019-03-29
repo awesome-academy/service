@@ -37,4 +37,12 @@ class LocationRepository extends BaseRepository implements LocationInterface, Im
             return false;
         }
     }
+
+    public function freeLocationAndFind($statusId, $locationId, $locationName)
+    {
+        $locations = $this->model->where('status_id', $statusId)->get()->pluck('name', 'id');
+        $locations[$locationId] = $locationName;
+
+        return $locations;
+    }
 }
