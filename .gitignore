@@ -3,6 +3,8 @@
 /public/storage
 /public/fonts
 /public/mix-manifest.json
+/public/image/dish
+/public/image/location
 package-lock.json
 /storage/*.key
 /vendor

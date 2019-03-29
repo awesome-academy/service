@@ -28,4 +28,12 @@ class ConfirmationRepository extends BaseRepository implements ConfirmationInter
         $confirmation->location->status_id = $statusId;
         $confirmation->location->save();
     }
+
+    public function restoreStatusLocation($confirmation)
+    {
+        if (isset($confirmation->location)) {
+            $confirmation->location->status_id = 1;
+            $confirmation->location->save();
+        }
+    }
 }

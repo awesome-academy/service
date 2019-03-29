@@ -21,6 +21,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['role:admin', 'auth']], func
     Route::resource('location', 'Admin\\LocationController');
     Route::resource('menu', 'Admin\\MenuController');
     Route::resource('dish', 'Admin\\DishController');
+    Route::resource('confirmation', 'Admin\\ConfirmationController');
     Route::get('/', 'Admin\\AdminController@dashboard');
 });
 

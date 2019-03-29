@@ -69,5 +69,18 @@
     "menu.notification.add": "Menu added!",
     "menu.notification.update": "Menu update!",
     "menu.notification.delete": "Menu delete!",
-    "typeMenu": "Type Menu"
+    "typeMenu": "Type Menu",
+    "confirmation": "Confirmations",
+    "confirmation.title": "Confirmation",
+    "confirmation.title_create": "Create New Confirmation",
+    "confirmation.edit_create": "Edit Confirmation",
+    "confirmation.notification.add": "Confirmation added!",
+    "confirmation.notification.update": "Confirmation update!",
+    "confirmation.notification.delete": "Confirmation delete!",
+    "requirement": "Requirement",
+    "name.orderer": "Name Orderer",
+    "menu.order": "Menu Order",
+    "dish.menu": "Dishes in Menu",
+    "exist.menu": "This order don't have menu",
+    "exist.dish": "This order don't have any dishes"
 }

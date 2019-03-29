@@ -7,9 +7,9 @@
 
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">{{ __('dish.title') }}</div>
+                    <div class="card-header">{{ __('confirmation.title') }}</div>
                     <div class="card-body">
-                        <a href="{{ url('/admin/dish/create') }}" class="btn btn-success btn-sm">
+                        <a href="{{ url('/admin/confirmation/create') }}" class="btn btn-success btn-sm">
                             <i class="fa fa-plus" aria-hidden="true"></i> {{ __('add') }}
                         </a>
                         @if(Session::has('flash_message'))
@@ -18,7 +18,7 @@
                         @if(Session::has('flash_danger'))
                             <div id="message" class="alert alert-danger"><span class="fa fa-check"></span><em> {{ session('flash_danger') }}</em></div>
                         @endif
-                        {{ Form::open(['method' => 'GET', 'url' => '/admin/dish', 'class' => 'form-inline my-2 my-lg-0 float-right', 'role' => 'search'])  }}
+                        {{ Form::open(['method' => 'GET', 'url' => '/admin/confirmation', 'class' => 'form-inline my-2 my-lg-0 float-right', 'confirmation' => 'search'])  }}
                         <div class="input-group">
                             <input type="text" class="form-control" name="search" placeholder="{{ __('search') }}" value="{{ request('search') }}">
                             <span class="input-group-append">
@@ -35,21 +35,20 @@
                             <table class="table table-borderless">
                                 <thead>
                                     <tr>
-                                        <th>#</th><th>{{ __('name') }}</th><th>{{ __('price') }}</th><th>{{ __('actions') }}</th>
+                                        <th>#</th><th>{{ __('name.orderer') }}</th><th>{{ __('actions') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($dish as $item)
+                                @foreach($confirmation as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $item->name }}</td>
-                                        <td>{{ $item->price }} {{ __('currency') }}</td>
+                                        <td>{{ $item->order->name }}</td>
                                         <td>
-                                            <a href="{{ url('/admin/dish/' . $item->id) }}"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> {{ __('show') }}</button></a>
-                                            <a href="{{ url('/admin/dish/' . $item->id . '/edit') }}"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{ __('edit') }}</button></a>
+                                            <a href="{{ url('/admin/confirmation/' . $item->id) }}"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> {{ __('show') }}</button></a>
+                                            <a href="{{ url('/admin/confirmation/' . $item->id . '/edit') }}"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{ __('edit') }}</button></a>
                                             {{ Form::open([
                                                 'method' => 'DELETE',
-                                                'url' => ['/admin/dish', $item->id],
+                                                'url' => ['/admin/confirmation', $item->id],
                                                 'style' => 'display:inline'
                                             ]) }}
                                                 {{ Form::button('<i class="fa fa-trash-o" aria-hidden="true"></i>' . __('delete') , [
@@ -63,7 +62,7 @@
                                 @endforeach
                                 </tbody>
                             </table>
-                            <div class="pagination-wrapper"> {{ $dish->appends(['search' => Request::get('search')])->render() }} </div>
+                            <div class="pagination-wrapper"> {{ $confirmation->appends(['search' => Request::get('search')])->render() }} </div>
                         </div>
 
                     </div>
