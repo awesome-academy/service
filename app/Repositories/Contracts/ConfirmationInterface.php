@@ -20,4 +20,12 @@ interface ConfirmationInterface
      * @param int $statusId
      */
     public function updateConfirm($id, $input, $statusId);
+
+    /**
+     * restore status location before delete confirmation
+     *
+     * @param collection $confirmation
+     * @return void
+     */
+    public function restoreStatusLocation($confirmation);
 }
