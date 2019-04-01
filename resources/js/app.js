@@ -25,8 +25,10 @@ Vue.component('notification', require('./components/Notification.vue').default);
 
 import BDropdown from 'bootstrap-vue/es/components/dropdown/dropdown'
 import BDropdownItem from 'bootstrap-vue/es/components/dropdown/dropdown-item'
+import BDropdownItemButton from 'bootstrap-vue/es/components/dropdown/dropdown-item-button'
 Vue.component('b-dropdown-item', BDropdownItem)
 Vue.component('b-dropdown', BDropdown)
+Vue.component('b-dropdown-item-button', BDropdownItemButton)
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
