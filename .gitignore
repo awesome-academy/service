@@ -5,6 +5,8 @@
 /public/mix-manifest.json
 /public/image/dish
 /public/image/location
+/public/css/app.css
+/public/js/app.js
 package-lock.json
 /storage/*.key
 /vendor
