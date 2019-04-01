@@ -24,6 +24,11 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.8.1",
-        "vue-template-compiler": "^2.6.10"
+        "bootstrap-vue": "^2.0.0-rc.16",
+        "laravel-echo": "^1.5.3",
+        "node-fetch": "^2.3.0",
+        "socket.io-client": "^2.2.0",
+        "vue-template-compiler": "^2.6.10",
+        "vuex": "^3.1.0"
     }
 }

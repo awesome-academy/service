@@ -8,6 +8,8 @@ use App\Repositories\Facades\UserRepository;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
+use Auth;
+use App\Repositories\Facades\ConfirmationRepository;
 
 class UserController extends Controller
 {
@@ -124,5 +126,12 @@ class UserController extends Controller
         UserRepository::destroy($id);
 
         return redirect('admin/user')->with('flash_danger', __('user.notification.delete'));
+    }
+
+    public function getUserAndConfirmation()
+    {
+        $confirmations = ConfirmationRepository::with('order')->where('user_id', null)->get();
+
+        return response(['data' => Auth::user(), 'confirmations' => $confirmations]);
     }
 }

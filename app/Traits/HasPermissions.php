@@ -72,4 +72,17 @@ trait HasPermissions
 
         return $permissions;
     }
+
+    /**
+     * Return all the users the permission has via roles.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function getUsersViaRoles()
+    {
+        return $this->load('roles', 'roles.users')
+        ->roles->flatMap(function ($role) {
+            return $role->users;
+        })->sort()->values();
+    }
 }
